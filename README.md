@@ -12,15 +12,18 @@ Antes de iniciar, verifique se você possui os seguintes pré-requisitos instala
 
 ## Como Executar
 Siga os passos abaixo para montar o cenário com os contêineres Docker, após o download do repositório:
-* $ cd nginx-proxy-reverse-lab
-* $ sudo docker compose up -d
+```bash
+$ cd nginx-proxy-reverse-lab
+$ sudo docker compose up -d
+```
 
 ## Configurar hosts
 Configure o arquivo /etc/hosts (ou C:\Windows\System32\drivers\etc\hosts no Windows) para apontar para o endereço IP 127.0.0.1 das URLs desejadas:
-* 127.0.0.1 all.labs.com.br
-* 127.0.0.1 red.labs.com.br
-* 127.0.0.1 blue.labs.com.br
-
+```bash
+127.0.0.1 all.labs.com.br
+127.0.0.1 red.labs.com.br
+127.0.0.1 blue.labs.com.br
+```
 
 Agora, ao acessar all.labs.com.br em um navegador, você será balanceado entre as páginas web azul e vermelha. O mesmo acontecerá ao acessar red.labs.com.br e blue.labs.com.br.
 
